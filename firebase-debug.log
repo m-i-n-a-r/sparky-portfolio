@@ -1,0 +1,16 @@
+[debug] [2018-11-15T15:04:04.196Z] ----------------------------------------------------------------------
+[debug] [2018-11-15T15:04:04.200Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\minat\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2018-11-15T15:04:04.202Z] CLI Version:   6.1.0
+[debug] [2018-11-15T15:04:04.202Z] Platform:      win32
+[debug] [2018-11-15T15:04:04.202Z] Node Version:  v10.13.0
+[debug] [2018-11-15T15:04:04.205Z] Time:          Thu Nov 15 2018 16:04:04 GMT+0100 (GMT+01:00)
+[debug] [2018-11-15T15:04:04.205Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-11-15T15:04:04.231Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-15T15:04:04.235Z] > authorizing via signed-in user
+[debug] [2018-11-15T15:04:04.235Z] [iam] checking project minar-portfolio for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2018-11-15T15:04:04.243Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/minar-portfolio:testIamPermissions  
+
+[debug] [2018-11-15T15:04:05.350Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-15T15:04:05.354Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/minar-portfolio  
+ 
