@@ -176,6 +176,10 @@ input, select, textarea {
 		font-style: italic;
 	}
 
+	i {
+		margin-right: 10px;
+	}
+
 	p {
 		margin: 0 0 2em 0;
 	}
@@ -2469,6 +2473,54 @@ input, select, textarea {
 		color: #ffffff;
 	}
 
+/* Skills */
+
+	ul.skills {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+		text-align: left;
+	}
+	
+		ul.skills li {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: inline-block;
+			display: flex;
+			font-size: 14;
+			line-height: 1em;
+			white-space: nowrap;
+			margin: 0.8em 0;
+		}
+	/* Facts */
+		ul.facts {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: inline-block;
+			text-align: left;
+		}
+		
+			ul.facts li {
+				display: -moz-flex;
+				display: -webkit-flex;
+				display: -ms-flex;
+				display: flex;
+				font-size: 14;
+				line-height: 1em;
+				white-space: nowrap;
+				margin: 0.8em 0;
+			}
 /* Actions */
 
 	ul.actions {
@@ -2870,7 +2922,7 @@ input, select, textarea {
 			}
 
 			.statistics li.style2 {
-				background-color: #000000;
+				background-color: #222222;
 			}
 
 			.statistics li.style3 {
@@ -2878,7 +2930,7 @@ input, select, textarea {
 			}
 
 			.statistics li.style4 {
-				background-color: #000000;
+				background-color: #222222;
 			}
 
 			.statistics li.style5 {
