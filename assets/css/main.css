@@ -2409,7 +2409,7 @@ input, select, textarea {
 		}
 
 	ul {
-		list-style: disc;
+		list-style: none;
 		margin: 0 0 2em 0;
 		padding-left: 1em;
 	}
@@ -2480,47 +2480,40 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		list-style: none;
-		margin: 0;
+		
+		columns: 3;
 		padding: 0;
-		display: inline-block;
+		margin: 0;
+		list-style: none;
 		text-align: left;
 	}
 	
 		ul.skills li {
-			display: -moz-flex;
-			display: -webkit-flex;
-			display: -ms-flex;
-			display: inline-block;
-			display: flex;
 			font-size: 14;
 			line-height: 1em;
 			white-space: nowrap;
-			margin: 0.8em 0;
+			margin: 1em 0;
+			padding: 0.5em;
+			border: 2px solid rgb(0, 202, 158);
+			border-radius: 20px;
 		}
+		  
 	/* Facts */
+
 		ul.facts {
-			display: -moz-flex;
-			display: -webkit-flex;
-			display: -ms-flex;
-			display: flex;
+			max-width: 600px;
+			margin-left: auto;
+			margin-right: auto;
 			list-style: none;
-			margin: 0;
-			padding: 0;
-			display: inline-block;
 			text-align: left;
 		}
 		
 			ul.facts li {
-				display: -moz-flex;
-				display: -webkit-flex;
-				display: -ms-flex;
-				display: flex;
 				font-size: 14;
 				line-height: 1em;
-				white-space: nowrap;
 				margin: 0.8em 0;
 			}
+
 /* Actions */
 
 	ul.actions {
@@ -2847,6 +2840,11 @@ input, select, textarea {
 		list-style: none;
 	}
 
+		.features.outline li {
+			border: 2px solid rgb(0, 202, 158);
+			border-radius: 20px;
+		}
+
 		.features li {
 			width: calc(33.3333333333% - 2em);
 			margin-left: 2em;
@@ -2855,7 +2853,7 @@ input, select, textarea {
 		}
 
 			.features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3) {
-				margin-top: 0;
+				margin-top: 1em;
 			}
 
 			.features li > :last-child {
@@ -2947,13 +2945,13 @@ input, select, textarea {
 			}
 
 			.statistics li:first-child {
-				border-top-left-radius: 8px;
-				border-bottom-left-radius: 8px;
+				border-top-left-radius: 50px;
+				border-bottom-left-radius: 50px;
 			}
 
 			.statistics li:last-child {
-				border-top-right-radius: 8px;
-				border-bottom-right-radius: 8px;
+				border-top-right-radius: 50px;
+				border-bottom-right-radius: 50px;
 			}
 
 			.statistics li .icon {
@@ -2984,12 +2982,12 @@ input, select, textarea {
 
 				.statistics li:first-child {
 					border-bottom-left-radius: 0;
-					border-top-right-radius: 8px;
+					border-top-right-radius: 50px;
 				}
 
 				.statistics li:last-child {
 					border-top-right-radius: 0;
-					border-bottom-left-radius: 8px;
+					border-bottom-left-radius: 50px;
 				}
 
 				.statistics li .icon:before {
