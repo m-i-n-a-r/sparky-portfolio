@@ -165,7 +165,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			border-bottom-color: transparen;
+			border-bottom-color: transparent;
 		}
 
 	strong, b {
@@ -1842,13 +1842,13 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		border-radius: 8px;
+		border-radius: 30px;
 		border: 0;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 300;
-		height: 2.75em;
-		line-height: 2.75em;
+		height: 2.5em;
+		line-height: 2.5em;
 		min-width: 9.25em;
 		padding: 0 1.5em;
 		text-align: center;
@@ -2841,9 +2841,9 @@ input, select, textarea {
 	}
 
 		.features.outline li {
-			background-color: #dbdbdb;
+			background-color: #f8f8f8;
 			color: #000000;
-			border: 3px solid rgb(0, 114, 89);
+			border: 3px solid rgba(36, 143, 120, 0.644);
 			border-radius: 20px;
 		}
 
@@ -3043,8 +3043,8 @@ input, select, textarea {
 			}
 
 			.spotlight .content-short p {
-				margin-left: 9em;
-				margin-right: 9em;
+				max-width: 26em;
+				display: inline-block;
 			}
 
 		.spotlight .image {
