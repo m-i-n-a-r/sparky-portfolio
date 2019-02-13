@@ -1846,7 +1846,7 @@ input, select, textarea {
 		border: 0;
 		cursor: pointer;
 		display: inline-block;
-		font-weight: 300;
+		font-weight: 500;
 		height: 2.5em;
 		line-height: 2.5em;
 		min-width: 9.25em;
@@ -2472,31 +2472,6 @@ input, select, textarea {
 	dl dt {
 		color: #ffffff;
 	}
-
-/* Skills */
-
-	ul.skills {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		
-		columns: 3;
-		padding: 0;
-		margin: 0;
-		list-style: none;
-		text-align: left;
-	}
-	
-		ul.skills li {
-			font-size: 14;
-			line-height: 1em;
-			white-space: nowrap;
-			margin: 1em 0;
-			padding: 0.5em;
-			border: 2px solid rgb(0, 202, 158);
-			border-radius: 20px;
-		}
 		  
 	/* Facts */
 
@@ -2834,13 +2809,18 @@ input, select, textarea {
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		width: calc(100% + 2em);
+		width: calc(100% + 3em);
 		margin: 0 0 3em -2em;
 		padding: 0;
 		list-style: none;
 	}
 
 		.features.outline li {
+			width: calc(25%);
+			margin-right: 1em;
+			margin-left: 1em;
+			margin-top: 0.5em;
+			padding: 0;
 			background-color: #f8f8f8;
 			color: #000000;
 			border: 3px solid rgba(36, 143, 120, 0.644);
@@ -2849,7 +2829,8 @@ input, select, textarea {
 
 		.features li {
 			width: calc(33.3333333333% - 2em);
-			margin-left: 2em;
+			margin-right: 1em;
+			margin-left: 1em;
 			margin-top: 1em;
 			padding: 0;
 		}
@@ -3052,7 +3033,7 @@ input, select, textarea {
 			margin-left: 4em;
 			padding: 0.65em;
 			border-radius: 100%;
-			border: solid 1px;
+			border: solid 2px;
 		}
 
 			.spotlight .image img {
@@ -3288,8 +3269,8 @@ input, select, textarea {
 		max-width: calc(100% - 4em);
 		padding: 1em;
 		background-color: #f7f7f7;
-		border-top-left-radius: 0.25em;
-		border-top-right-radius: 0.25em;
+		border-top-left-radius: 2.25em;
+		border-top-right-radius: 2.25em;
 		cursor: default;
 		text-align: center;
 	}
@@ -3354,7 +3335,7 @@ input, select, textarea {
 					line-height: 2.25em;
 					padding: 0 1.25em;
 					border: 0;
-					border-radius: 8px;
+					border-radius: 20px;
 					box-shadow: inset 0 0 0 1px transparent;
 				}
 
@@ -3363,7 +3344,7 @@ input, select, textarea {
 					}
 
 					#nav ul li a.active {
-						background-color: #ffffff;
+						background-color: #c7c7c7;
 						box-shadow: none;
 					}
 
@@ -3400,9 +3381,9 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #ffffff;
+		background-color: rgba(255, 255, 255, 0.9);		
 		color: #636363;
-		border-radius: 0.25em;
+		border-radius: 2.25em;
 	}
 
 		#main input, #main select, #main textarea {
