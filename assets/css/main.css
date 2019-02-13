@@ -1,5 +1,5 @@
 @import url(font-awesome.min.css);
-@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
+@import "https://fonts.googleapis.com/css?family=K2D:300,500";
 
 /*
 	Stellar by HTML5 UP
@@ -125,10 +125,10 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "K2D", sans-serif;
 		font-size: 17pt;
 		font-weight: 300;
-		line-height: 1.65;
+		line-height: 1.5;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -3063,16 +3063,18 @@ input, select, textarea {
 
 		.spotlight .image-small {
 			float: left;
-			margin-right: 2em;
+			margin-right: 3em;
 			padding-top: 0em;
-			padding-bottom: 2em;
+			margin-bottom: 3em;
+			border-radius: 100%;
+			border: solid 10px;
 		}
 	
 			.spotlight .image-small img {
 				display: block;
-				border-radius: 20%;
-				width: 8em;
-				height: 8em;
+				border-radius: 100%;
+				width: 7em;
+				height: 7em;
 			}
 
 		@media screen and (max-width: 980px) {
