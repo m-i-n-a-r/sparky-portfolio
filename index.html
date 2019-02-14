@@ -1,13 +1,18 @@
 <!DOCTYPE html>
+<!-- Using multiple languages is possible, but the page is english only atm -->
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
+  <!-- Title in the browser tab -->
   <title>m.i.n.a.r.</title>
+  <!-- Description used when the site is added to favorites -->
   <meta name="description" content="m.i.n.a.r. official site.">
   <meta name="author" content="m.i.n.a.r." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- This attribute controls the Chrome action bar color on mobile devices -->
   <meta name="theme-color" content="#000000">
+  <!-- Css files involved, including the local css and FontAwesome v5 -->
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
     crossorigin="anonymous">
@@ -18,26 +23,28 @@
 
 <body>
 
-  <!-- particles.js container -->
+  <!-- Particles.js container used as a background. Removing it removes the particles -->
   <div id="particles-js"></div>
   <!-- Wrapper -->
   <div id="wrapper">
 
-    <!-- Header -->
+    <!-- Header - a logo, a short sentence -->
     <header id="header" class="alt">
-      <span class="logo"><img src="images/logo.svg" alt=""/></span>
+      <span class="logo"><img src="images/logo.svg" alt="" /></span>
       <p>Developer, 3d printing passionate and designer</p>
+
+      <!-- A set of social media and quick links. Up to four links are supported -->
       <ul class="icons">
         <li><a href="https://github.com/m-i-n-a-r" target="_blank" class="fab fa-github fa-2x"></a></li>
         <li><a href="https://www.linkedin.com/in/gianluca-conti-723926147/" target="_blank" class="fab fa-linkedin fa-2x"></a></li>
         <li><a href="https://play.google.com/store/apps/dev?id=7720251761301594831" target="_blank" class="fab fa-google-play fa-2x"></a></li>
-        <!--<li><a href="https://www.youtube.com/channel/UChVxFCDNULWEiDqfrjuZ3Tw" target="_blank" class="fab fa-youtube fa-2x"></a></li>-->
         <li><a href="https://www.instagram.com/minar.tastic/" target="_blank" class="fab fa-instagram fa-2x"></a></li>
+        <!--<li><a href="https://www.youtube.com/channel/UChVxFCDNULWEiDqfrjuZ3Tw" target="_blank" class="fab fa-youtube fa-2x"></a></li>-->
       </ul>
       </section>
     </header>
 
-    <!-- Nav -->
+    <!-- Nav - navbar of contents, used in the desktop version -->
     <nav id="nav">
       <ul>
         <li><a href="#intro" class="active">Who are you?</a></li>
@@ -47,10 +54,10 @@
       </ul>
     </nav>
 
-    <!-- Main -->
+    <!-- Main - the "white part" -->
     <div id="main">
 
-      <!-- Introduction -->
+      <!-- Introduction - an image and a bio -->
       <section id="intro" class="main special">
         <div class="spotlight">
           <div class="content">
@@ -63,11 +70,14 @@
         </div>
       </section>
 
-      <!-- Skills -->
+      <!-- Skills - list of scopes and related skills -->
       <section id="skills" class="main special">
         <header class="major">
           <h2><b>MY PERSONAL SKILLS</b></h2>
         </header>
+
+        <!-- Other entries can be added to the list of scopes and to the list of skills 
+        The icons are from FontAwesome v5: choose one from their site and type its name to use it -->
         <h2><i class="fas fa-code"></i><b>Languages and frameworks</b></h2>
         <ul class="features outline">
           <li>Java</li>
@@ -83,6 +93,7 @@
           <li>SQL</li>
           <li>LUA</li>
         </ul>
+
         <h2><i class="fas fa-laptop"></i><b>Softwares and platforms</b></h2>
         <ul class="features outline">
           <li>Android Studio</li>
@@ -96,6 +107,7 @@
           <li>Windows and PowerShell</li>
           <li>PostgreSQL</li>
         </ul>
+
         <h2><i class="fas fa-suitcase"></i><b>Hardware and miscellanous</b></h2>
         <ul class="features outline">
           <li>Delta 3D printers</li>
@@ -109,7 +121,7 @@
         </ul>
       </section>
 
-      <!-- Projects -->
+      <!-- Projects - small introduction, list of projects -->
       <section id="projects" class="main special">
         <header class="major">
           <h2><b>MY WORKS</b></h2>
@@ -117,6 +129,7 @@
             Here's a list of my favorites!</p>
         </header>
 
+        <!-- A small description, an image and a link. Nothing more. Other entries can be added -->
         <div class="spotlight">
           <div class="content">
             <header class="major">
@@ -134,6 +147,7 @@
             <a href="https://github.com/simonesestito/escape_earth" class="button small" target="_blank">Learn More</a>
           </div>
         </div>
+
         <div class="spotlight">
           <div class="content">
             <header class="major">
@@ -151,6 +165,7 @@
               More</a>
           </div>
         </div>
+
         <div class="spotlight">
           <div class="content">
             <header class="major">
@@ -168,6 +183,7 @@
               More</a>
           </div>
         </div>
+
         <div class="spotlight">
           <div class="content">
             <header class="major">
@@ -186,19 +202,21 @@
           </div>
         </div>
 
+        <!-- Image-less project entry. Used for the site itself, but can be duplicated -->
         <div class="spotlight">
           <div class="content-short">
             <h3><b>This Portfolio Site!</b></h3>
             <p class="short">
-              This site itself is one of my projects! I decided to Upload the souce on Github, to be used as
-              a base for other developers. You can find it <a href="https://github.com/m-i-n-a-r/sparky-portfolio">here</a>!
-              You will also find informations about hosting and domains!
+              This site itself is one of my projects! I decided to Upload the souce
+              on Github, to be used as a base for other developers. You can find it
+              <a href="https://github.com/m-i-n-a-r/sparky-portfolio" target="_blank">here</a>!
+              You will also find informations about hosting services and domains!
             </p>
           </div>
         </div>
       </section>
 
-      <!-- Fun facts (not an actual section) -->
+      <!-- Fun facts (not an actual section, but sometimes they help) -->
       <section id="funfacts" class="main special">
         <header class="major">
           <h3><b>Fun facts!</b></h3>
@@ -215,7 +233,7 @@
         </ul>
       </section>
 
-      <!-- More infos -->
+      <!-- More infos - statistics and a personal goal -->
       <section id="infos" class="main special">
         <header class="major">
           <h2><b>SOME NUMBER, AND MY GOAL</b></h2>
@@ -223,6 +241,7 @@
             Work and ambitions are important, but only if you can share your progresses with
             someone you love.</p>
         </header>
+        <!-- Some statistics, to highlight particular numbers. Other numbers can be added to the list -->
         <ul class="statistics">
           <li class="style1">
             <span class="icon fas fa-download"></span>
@@ -249,16 +268,18 @@
 
     </div>
 
-    <!-- Footer -->
+    <!-- Footer - contacts and another short text -->
     <footer id="footer">
       <section>
         <h2>Why contact me?</h2>
+        <!-- A final message for the viewer -->
         <p>You can contact me for various reasons, and i'll do my best to answer you.
           You can do it to ask for assistance with my apps, to suggest improvements, or to give
           a feedback. i'll also consider offers, eventually!</p>
       </section>
       <section>
-        <h2>How to contact me</h2>
+        <h2>How to contact me:</h2>
+        <!-- Some contact informations. Other informations can be added -->
         <dl class="alt">
           <dt>City</dt>
           <dd>Rome, Italy</dd>
@@ -279,21 +300,32 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/particles.js"></script>
   <script src="assets/js/app.js"></script>
+
   <script>
+    // variables to change to correctly generate the initial description and other informations
+    birthYear = 1995; // the year of birth
+    birthMonth = 2; // the month of birth, without leading zero
+    birthDay = 23; // the day of birth, without leading zero
+    experienceStart = 2011; // the year the experience starts, i.e. when i wrote my first line of code
     date = new Date();
     year = date.getFullYear();
-    if (date.getMonth() < 3 && date.getDate() < 24) year = year - 1;
-    age = year - 1995;
+
+    if (date.getMonth() <= birthMonth && date.getDate() <= birthDay) year = year - 1;
+    age = year - birthYear;
+    // the initial description. It is meant to be modified freely
     me = "I'm a " + age + " years old guy, with a lot of interests and hobbies, and a great " +
       "propension to <b>create</b>. I worked on software for different platforms and operating systems, " +
       "graphic design, 3d printing and modeling, videomaking" +
       ", photography, music and more. I also like videogames, cars, sports and philosophy. The <b>patience</b> " +
       "is probably my best quality, and i know how to find the informations to solve the problems i face" +
       " during my work, usually! Just to mention, i'm also a <b>computer engineer</b>, and i can work both alone or in a team.";
+
+    // assign the description to the correct html element, given its id 
     document.getElementById('me').innerHTML = me;
   </script>
+
   <script>
-    experience = date.getFullYear() - 2011;
+    experience = date.getFullYear() - experienceStart;
     document.getElementById('experience').innerHTML = experience;
   </script>
 
