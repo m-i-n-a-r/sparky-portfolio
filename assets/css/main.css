@@ -2479,7 +2479,7 @@ input, select, textarea {
 			max-width: 600px;
 			margin-left: auto;
 			margin-right: auto;
-			list-style: square;
+			list-style: circle;
 			text-align: left;
 		}
 		
@@ -2809,20 +2809,23 @@ input, select, textarea {
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		width: calc(100% + 3em);
-		margin: 0 0 3em -2em;
+		width: calc(100%);
+		margin: 0 0 3em 0;
 		padding: 0;
 		list-style: none;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 		.features.outline li {
-			width: calc(33.3333333333% - 2em);
+			display: inline-block;
+			min-width: 3em;
 			margin-top: 0.5em;
-			padding: 1;
 			background-color: #f8f8f8;
 			color: #000000;
 			border: 3px solid rgba(36, 143, 120, 0.644);
 			border-radius: 20px;
+			text-align: center;
 		}
 
 		.features li {
@@ -2833,9 +2836,9 @@ input, select, textarea {
 			padding: 0;
 		}
 
-			.features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3) {
-				margin-top: 1em;
-			}
+			/* .features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3) {
+				margin-top: 0;
+			} */
 
 			.features li > :last-child {
 				margin-bottom: 0;
@@ -2847,9 +2850,9 @@ input, select, textarea {
 				width: calc(50% - 2em);
 			}
 
-				.features li:nth-child(3) {
+				/* .features li:nth-child(3) {
 					margin-top: 3em;
-				}
+				} */
 
 		}
 
@@ -2866,9 +2869,9 @@ input, select, textarea {
 					margin-top: 2em;
 				}
 
-					.features li:nth-child(2), .features li:nth-child(3) {
+					/* .features li:nth-child(2), .features li:nth-child(3) {
 						margin-top: 2em;
-					}
+					} */
 
 		}
 
@@ -2897,23 +2900,23 @@ input, select, textarea {
 		}
 
 			.statistics li.style1 {
-				background-color: #000000;
+				background-color: #111111;
 			}
 
 			.statistics li.style2 {
-				background-color: #222222;
+				background-color: #333333;
 			}
 
 			.statistics li.style3 {
-				background-color: #000000;
+				background-color: #111111;
 			}
 
 			.statistics li.style4 {
-				background-color: #222222;
+				background-color: #333333;
 			}
 
 			.statistics li.style5 {
-				background-color: #000000;
+				background-color: #111111;
 			}
 
 			.statistics li strong, .statistics li b {
@@ -3442,8 +3445,8 @@ input, select, textarea {
 		#main button,
 		#main .button {
 			background-color: transparent;
-			box-shadow: inset 0 0 0 1px #dddddd;
-			color: #636363 !important;
+			box-shadow: inset 0 0 0 2px #636363; /* button border in "main special" tags */
+			color: #636363 !important; /* button text color in "main special" tags */
 		}
 
 			#main input[type="submit"]:hover,
@@ -3451,7 +3454,7 @@ input, select, textarea {
 			#main input[type="button"]:hover,
 			#main button:hover,
 			#main .button:hover {
-				background-color: rgba(222, 222, 222, 0.25);
+				background-color: rgba(185, 185, 185, 0.7); /* button fill color on hover */
 			}
 
 			#main input[type="submit"]:active,
@@ -3459,7 +3462,7 @@ input, select, textarea {
 			#main input[type="button"]:active,
 			#main button:active,
 			#main .button:active {
-				background-color: rgba(222, 222, 222, 0.5);
+				background-color: rgba(222, 222, 222, 0.5); 
 			}
 
 			#main input[type="submit"].icon:before,
@@ -3610,10 +3613,10 @@ input, select, textarea {
 
 		#main header.major h2:after {
 			background-color: #dddddd;
-			background-image: -moz-linear-gradient(90deg, #000000, #808080, #000000);
-			background-image: -webkit-linear-gradient(90deg, #000000, #808080, #000000);
-			background-image: -ms-linear-gradient(90deg, #000000, #808080, #000000);
-			background-image: linear-gradient(90deg, #000000, #808080, #000000);
+			background-image: -moz-linear-gradient(90deg, #888888, #636363, #888888);
+			background-image: -webkit-linear-gradient(90deg, #888888, #636363, #888888);
+			background-image: -ms-linear-gradient(90deg, #888888, #636363, #888888);
+			background-image: linear-gradient(90deg, #888888, #636363, #888888);
 		}
 
 		#main table tbody tr {
