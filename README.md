@@ -1,4 +1,5 @@
 # Sparky Portfolio
+[![License: MIT](https://img.shields.io/cocoapods/l/AFNetworking.svg)](https://github.com/m-i-n-a-r/sparky-portfolio/blob/master/LICENSE.md)\
 Sparky Portfolio is an open source **responsive website** project of a simple yet beautiful portfolio/personal site. It's under the **MIT License**. Build your personal site in **half a day**!
 
 ### Status: WIP
@@ -13,7 +14,7 @@ This little project started with a **question** i did to myself during my studie
 
 The short answer is: a site can be linked almost everywhere (Github, LinkedIn, YouTube, Facebook, Instagram, Telegram) so it's a good way to tell people **who you are** and **what you can do**. It could be a sort of online curriculum, just like LinkedIn, but more personal.
 
-So i built a **small site**, starting from some libraries and templates, and trying to create something customizable yet very, i mean very, simple. The result (currently still **WIP**) is a good looking site which contains a lot of personal information in a small amount of space and in a **single page**. I'm still trying to figure out how to make it even more simple.
+So i built a **small site**, starting from some libraries and templates, and trying to create something customizable yet very, i mean very, simple. The result (currently still **WIP**) is a good looking site which contains a lot of personal informations in a small amount of space and in a **single page**. I'm still trying to figure out how to make it even more simple.
 
 ## Features
 - Responsive site based on an heavily modified [html5up](https://html5up.net/) template.
