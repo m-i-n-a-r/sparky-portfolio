@@ -1,12 +1,6 @@
 @import url(font-awesome.min.css);
 @import "https://fonts.googleapis.com/css?family=K2D:300,500";
 
-/*
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -2469,21 +2463,22 @@ input, select, textarea {
 		color: #ffffff;
 	}
 		  
-	/* Facts */
+/* Facts */
 
-		ul.facts {
-			max-width: 600px;
-			margin-left: auto;
-			margin-right: auto;
-			list-style: circle;
-			text-align: left;
-		}
+/* Used in fun facts: it's basically a bulleted list with custom values */
+	ul.facts {
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+		list-style: circle;
+		text-align: left;
+	}
 		
-			ul.facts li {
-				font-size: 14;
-				line-height: 1em;
-				margin: 0.8em 0;
-			}
+		ul.facts li {
+			font-size: 14;
+			line-height: 1em;
+			margin: 0.8em 0;
+		}
 
 /* Actions */
 
@@ -2792,6 +2787,8 @@ input, select, textarea {
 
 /* Features */
 
+/* Used for personal skills */
+
 	.features {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -2817,9 +2814,9 @@ input, select, textarea {
 			display: inline-block;
 			min-width: 3em;
 			margin-top: 0.5em;
-			background-color: #f8f8f8;
-			color: #000000;
-			border: 3px solid rgba(36, 143, 120, 0.644);
+			background-color: #e0e0e0; /* Background color of each skill */
+			color: #636363; /* Text color */
+			border: 3px solid rgba(36, 143, 120, 0.644); /* Border color of each skill */
 			border-radius: 20px;
 			text-align: center;
 		}
@@ -2832,10 +2829,6 @@ input, select, textarea {
 			padding: 0;
 		}
 
-			/* .features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3) {
-				margin-top: 0;
-			} */
-
 			.features li > :last-child {
 				margin-bottom: 0;
 			}
@@ -2845,10 +2838,6 @@ input, select, textarea {
 			.features li {
 				width: calc(50% - 2em);
 			}
-
-				/* .features li:nth-child(3) {
-					margin-top: 3em;
-				} */
 
 		}
 
@@ -2864,10 +2853,6 @@ input, select, textarea {
 					margin-left: 0;
 					margin-top: 2em;
 				}
-
-					/* .features li:nth-child(2), .features li:nth-child(3) {
-						margin-top: 2em;
-					} */
 
 		}
 
@@ -2895,6 +2880,7 @@ input, select, textarea {
 			text-align: center;
 		}
 
+			/* Color of each statistics box */
 			.statistics li.style1 {
 				background-color: #111111;
 			}
@@ -2904,15 +2890,15 @@ input, select, textarea {
 			}
 
 			.statistics li.style3 {
-				background-color: #111111;
+				background-color: #555555;
 			}
 
 			.statistics li.style4 {
-				background-color: #333333;
+				background-color: #777777;
 			}
 
 			.statistics li.style5 {
-				background-color: #111111;
+				background-color: #999999;
 			}
 
 			.statistics li strong, .statistics li b {
@@ -2982,6 +2968,7 @@ input, select, textarea {
 
 /* Spotlight */
 
+/* Used for projecs */
 	.spotlight {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -3150,7 +3137,7 @@ input, select, textarea {
 			}
 
 			/* logo class, only used in the big logo at the beginning of the page.
-			A css animation makes the logo blink. */
+			A css animation makes the logo blink and float. */
 			#header.alt .logo {
 				-moz-transition: opacity 1.25s ease, -moz-transform 0.5s ease;
 				-webkit-transition: opacity 1.25s ease, -webkit-transform 0.5s ease;

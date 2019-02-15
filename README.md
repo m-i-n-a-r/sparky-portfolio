@@ -36,7 +36,7 @@ Since this is my [personal site](https://minar.ml), you have to replace some ass
 2. The "core" of the site is the `index.html` file: here you will find the page layout.
 3. Replace the images in the `/images` folder with your profile pic, your projects and your site icon. I used an svg for my logo, but you can replace it with a png.
 4. Open `app.js` to customize particles.js. You can easily remove them, if you want. 
-5. To change the font and customize buttons, dimensions and so on, just open `main.css` and read the comments inside.
+5. To change the font and customize buttons, dimensions and so on, just open `main.css` and read the comments inside. If something is not commented and you don't know what you're doing, don't modify it!
 6. To test the site, just open the `index.html` in Chrome or in your favorite browser. Use the dev tools to show the mobile version, if you need it.
 
 ## What about the domain?
