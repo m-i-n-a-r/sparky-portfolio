@@ -1,4 +1,9 @@
-@import url(font-awesome.min.css);
+/* Not everything in this css is used in the original index.html.
+It offers a variety of options for every html element */
+
+@import "https://use.fontawesome.com/releases/v5.7.2/css/all.css";
+/* To use a different font, such as Product Sans, visit https://fonts.google.com/ and choose one.
+Then simply replace "K2D" with the name of the chosen font, in the line below and at line 123 */
 @import "https://fonts.googleapis.com/css?family=K2D:300,500";
 
 html, body, div, span, applet, object,
@@ -1917,8 +1922,8 @@ input, select, textarea {
 	button,
 	.button {
 		background-color: transparent;
-		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
-		color: #ffffff !important;
+		box-shadow: inset 0 0 0 3px #636363; /* Generic button border color */
+		color: #636363 !important; /* Generic button text color */
 	}
 
 		input[type="submit"]:hover,
@@ -2073,13 +2078,15 @@ input, select, textarea {
 			position: relative;
 		}
 
+			/* https://stackoverflow.com/questions/14736496/use-font-awesome-icons-in-css 
+			for details about the font-weight and the font-family name */
 			input[type="checkbox"] + label:before,
 			input[type="radio"] + label:before {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
-				font-family: FontAwesome;
+				font-family: Font Awesome 5 Free;
 				font-style: normal;
-				font-weight: normal;
+				font-weight: 900;
 				text-transform: none !important;
 			}
 
@@ -2214,12 +2221,14 @@ input, select, textarea {
 		position: relative;
 	}
 
+		/* https://stackoverflow.com/questions/14736496/use-font-awesome-icons-in-css 
+		for details about the font-weight and the font-family name */
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
+			font-family: Font Awesome 5 Free;
 			font-style: normal;
-			font-weight: normal;
+			font-weight: 900;
 			text-transform: none !important;
 		}
 
@@ -2996,6 +3005,7 @@ input, select, textarea {
 				margin: 0 0 2em 0;
 			}
 
+		/* Some special attributes for the short contents (e.g. image-less projects) */
 		.spotlight .content-short {
 			-moz-flex: 1;
 			-webkit-flex: 1;
@@ -3004,7 +3014,7 @@ input, select, textarea {
 		}		
 	
 			.spotlight .content-short a {
-				color: #00D491
+				color: rgba(36, 143, 120, 0.644);
 			}
 
 			.spotlight .content-short p {
@@ -3017,7 +3027,7 @@ input, select, textarea {
 			margin-left: 4em;
 			padding: 0.65em;
 			border-radius: 100%;
-			border: solid 2px;
+			border: solid 4px;
 		}
 
 			.spotlight .image img {
@@ -3032,7 +3042,7 @@ input, select, textarea {
 			padding-top: 0em;
 			margin-bottom: 2em;
 			border-radius: 100%;
-			border: solid 6px;
+			border: solid 4px;
 		}
 	
 			.spotlight .image-small img {
@@ -3096,8 +3106,12 @@ input, select, textarea {
 
 		}
 
+	/* Border color for the standard round image and the small round image */
 	.spotlight .image {
-		border-color: rgba(255, 255, 255, 0.35);
+		border-color: rgba(129, 129, 129, 0.35);
+	}
+	.spotlight .image-small {
+		border-color: rgba(129, 129, 129, 0.35);
 	}
 
 /* Header */
