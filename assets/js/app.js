@@ -1,11 +1,14 @@
-/* Config content (json): */
+// Config content (json): this configuration is applied to the particles
+// Refer to https://github.com/VincentGarreau/particles.js/ to customize this file
+// Background color and other properties are in main.css
 
 particlesJS('particles-js',
   
 {
   "particles": {
     "number": {
-      "value": 90,
+      // Avoid high values, they cause lags
+      "value": 90, 
       "density": {
         "enable": true,
         "value_area": 1000
@@ -23,8 +26,9 @@ particlesJS('particles-js',
       "polygon": {
         "nb_sides": 6
       },
-      "image": {
-        "src": "images/logo.svg",
+      // Not used since it's not in the "type" array above
+      "image": { 
+        "src": "images/sitelogo.png",
         "width": 100,
         "height": 100
       }
@@ -78,6 +82,7 @@ particlesJS('particles-js',
         "mode": "grab"
       },
       "onclick": {
+        // Avoid "push": if the user repeatedly clicks, the frame rate starts dropping
         "enable": true,
         "mode": "repulse"
       },
@@ -109,14 +114,6 @@ particlesJS('particles-js',
     }
   },
   "retina_detect": true,
-  "config_demo": {
-    "hide_card": false,
-    "background_color": "#000000",
-    "background_image": "",
-    "background_position": "50% 50%",
-    "background_repeat": "no-repeat",
-    "background_size": "cover"
-  }
 }
 
 );

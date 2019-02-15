@@ -302,17 +302,17 @@
   <script src="assets/js/app.js"></script>
 
   <script>
-    // variables to change to correctly generate the initial description and other informations
-    birthYear = 1995; // the year of birth
-    birthMonth = 2; // the month of birth, without leading zero
-    birthDay = 23; // the day of birth, without leading zero
-    experienceStart = 2011; // the year the experience starts, i.e. when i wrote my first line of code
+    // Variables to change to correctly generate the initial description and other informations
+    birthYear = 1995; // Mear of birth
+    birthMonth = 2; // Month of birth, without leading zero
+    birthDay = 23; // Day of birth, without leading zero
+    experienceStart = 2011; // Year from which the experience starts (e.g. when i wrote my first line of code)
     date = new Date();
     year = date.getFullYear();
 
     if (date.getMonth() <= birthMonth && date.getDate() <= birthDay) year = year - 1;
     age = year - birthYear;
-    // the initial description. It is meant to be modified freely
+    // The initial description. It is meant to be modified freely
     me = "I'm a " + age + " years old guy, with a lot of interests and hobbies, and a great " +
       "propension to <b>create</b>. I worked on software for different platforms and operating systems, " +
       "graphic design, 3d printing and modeling, videomaking" +
@@ -320,7 +320,7 @@
       "is probably my best quality, and i know how to find the informations to solve the problems i face" +
       " during my work, usually! Just to mention, i'm also a <b>computer engineer</b>, and i can work both alone or in a team.";
 
-    // assign the description to the correct html element, given its id 
+    // Assign the description to the correct html element, given its id 
     document.getElementById('me').innerHTML = me;
   </script>
 
