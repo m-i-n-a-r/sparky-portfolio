@@ -2,9 +2,9 @@
 [![License: MIT](https://img.shields.io/cocoapods/l/AFNetworking.svg)](https://github.com/m-i-n-a-r/sparky-portfolio/blob/master/LICENSE.md)\
 Sparky Portfolio is an open source **responsive website** project of a simple yet beautiful portfolio/personal site. It's under the **MIT License**. Build your personal site in **half a day**!
 
-### Status: WIP
-- [ ] Optimizations
-- [ ] New sections?
+### Status: V 1.0. Ready to be used!
+- [ ] New sections (i accept suggestions!)
+- [x] Optimizations
 - [x] Cleanup
 - [x] Code comments
 
