@@ -2480,13 +2480,13 @@ input, select, textarea {
 		margin-left: auto;
 		margin-right: auto;
 		list-style: circle;
-		text-align: left;
+		text-align: justify;
 	}
 		
 		ul.facts li {
-			font-size: 14;
+			font-size: 0.9em;
 			line-height: 1em;
-			margin: 0.8em 0;
+			margin: 0.7em 0;
 		}
 
 /* Actions */

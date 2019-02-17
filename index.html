@@ -104,10 +104,12 @@
           <li>Linux OSes and bash</li>
           <li>Windows and PowerShell</li>
           <li>PostgreSQL</li>
+          <li>Simplify3D</li>
         </ul>
 
         <h2><i class="fas fa-suitcase"></i><b>Hardware and miscellanous</b></h2>
         <ul class="features outline">
+          <li>Software architectures</li>
           <li>Delta 3D printers</li>
           <li>Pc repair</li>
           <li>Kernel and rom compilation</li>
@@ -116,6 +118,8 @@
           <li>System administration</li>
           <li>Social media management</li>
           <li>Fluent english speaker</li>
+          <li>Logic and problem solving</li>
+          <li>Creative design skills</li>
         </ul>
       </section>
 
@@ -131,12 +135,30 @@
         <div class="spotlight">
           <div class="content">
             <header class="major">
+              <h3><b>Pip-Boy Watchface</b></h3>
+            </header>
+            <div>
+              <span class="image-small"><img src="images/pipboy.png" alt="" /></span>
+              <p>
+                This watchface was started back in 2015 as a personal project. It uses LUA scripting and a set of graphic
+                resources, personally recreated in Photoshop. I gradually improved it, and today it has around 20k
+                paid downloads. I'm still working on it!
+              </p>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=minar.wmwatch.pipboy" class="button small" target="_blank">Learn
+              More</a>
+          </div>
+        </div>
+
+        <div class="spotlight">
+          <div class="content">
+            <header class="major">
               <h3><b>Escape Earth - NASA Hackaton 2018</b></h3>
             </header>
             <div>
               <span class="image-small"><img src="images/escapeearth.png" alt="" /></span>
               <p>
-                This is a project developed during the NASA Space Apps Challenge (20-21 October 2018).
+                This is a project created during the NASA Space Apps Challenge (20-21 October 2018).
                 It's a cross platform application developed using the Flutter Framework. What i did was
                 working on the initial idea, on the code and on the UI. Furthermore, i made the pitch video
                 and PowerPoint presentation.
@@ -149,31 +171,13 @@
         <div class="spotlight">
           <div class="content">
             <header class="major">
-              <h3><b>Pip-Boy Watchface</b></h3>
-            </header>
-            <div>
-              <span class="image-small"><img src="images/pipboy.png" alt="" /></span>
-              <p>
-                This watchface was started back in 2015 as a personal project. It uses LUA and a set of graphic
-                resources, personally recreated in Photoshop. I gradually improved it, and today it has around 20k
-                paid downloads. I'm still improving it!
-              </p>
-            </div>
-            <a href="https://play.google.com/store/apps/details?id=minar.wmwatch.pipboy" class="button small" target="_blank">Learn
-              More</a>
-          </div>
-        </div>
-
-        <div class="spotlight">
-          <div class="content">
-            <header class="major">
               <h3><b>Randomix - Decision Maker</b></h3>
             </header>
             <div>
               <span class="image-small"><img src="images/randomix.png" alt="" /></span>
               <p>
                 An app coded during my free time. Basically, it's an open source random decisor, and it's available
-                free. It uses a lot of animated vector drawables, an interesting resource type avilable in Android.
+                free. It uses a lot of animated vector drawables, an interesting Android resource type.
                 The code is available on Github for improvements and translations.
               </p>
             </div>
@@ -216,18 +220,18 @@
 
       <!-- Fun facts (not an actual section, but sometimes they help) -->
       <section id="funfacts" class="main special">
-        <header class="major">
-          <h3><b>Fun facts!</b></h3>
-        </header>
+        <h3><b>Fun facts!</b></h3>
         <ul class="facts">
           <li>I like to dress elegantly, every time is possible.</li>
           <li>I'm part of different groups of developers, especially on Telegram. Here i found some real friends.</li>
           <li>I can recognize almost any car model i see, and i especially like japanese sport cars.</li>
-          <li>Even if i'm not a boy anymore, i often use my free times to play videogames. One of my favourite is
-            Fallout.</li>
+          <li>Even if i'm not a boy anymore, i often use my free time to play videogames.</li>
           <li>I collect a lot of things, from coins to stamps to caps.</li>
           <li>I'm a tech addicted, but also an environment addicted. So i avoid to buy things continuously.</li>
           <li>My nickname, minar, comes from a trading card game, and was my first Xbox gamertag back in 2005.</li>
+          <li>I used to have a 5000 subscribers YouTube channel. It has been terminated for a reason I never understood.</li>
+          <li>I listen to music of all genres, and i particularly like electronic and classical music.</li>
+          <li>I prefer cats over dogs and mountain over sea.</li>
         </ul>
       </section>
 
@@ -294,7 +298,7 @@
           </dd>
         </dl>
       </section>
-      <p class="copyright">Copyright &copy; 2019 Gianluca Conti</p>
+      <p class="copyright">Copyright &copy; <span id="year"></span> Gianluca Conti</p>
     </footer>
   </div>
 
@@ -318,24 +322,28 @@
     experienceStart = 2011; // Year from which the experience starts (e.g. when i wrote my first line of code)
     date = new Date();
     year = date.getFullYear();
+    experience = year - experienceStart;
+
+    // Assign the years of experience in the statistics
+    document.getElementById('experience').innerHTML = experience;
+
+    // Assign the current year to the copyright line
+    document.getElementById('year').innerHTML = year;
 
     if (date.getMonth() <= birthMonth && date.getDate() <= birthDay) year = year - 1;
     age = year - birthYear;
     // The initial description. It is meant to be modified freely
-    me = "I'm a " + age + " years old guy, with a lot of interests and hobbies, and a great " +
+    me = "I'm a " + age + " years old guy, i have many interests and hobbies and a great " +
       "propension to <b>create</b>. I worked on software for different platforms and operating systems, " +
-      "graphic design, 3d printing and modeling, videomaking" +
-      ", photography, music and more. I also like videogames, cars, sports and philosophy. The <b>patience</b> " +
-      "is probably my best quality, and i know how to find the informations to solve the problems i face" +
-      " during my work, usually! Just to mention, i'm also a <b>computer engineer</b>, and i can work both alone or in a team.";
+      "graphic design, 3d printing and modeling, videomaking, photography, AI, music and more. I also like " + 
+      "videogames, cars, sports and philosophy. I became interested in computer science relatively late, " + 
+      "at 16, and I started modding games and mobile phones and creating icons and animations. The <b>patience</b> " +
+      "is probably my best quality, and i know how to find the informations to solve the problems i face " +
+      "during my work, usually! Just to mention, i'm a <b>computer engineer</b>, and i can work both " + 
+      "alone or in a team.";
 
     // Assign the description to the correct html element, given its id 
     document.getElementById('me').innerHTML = me;
-  </script>
-
-  <script>
-    experience = date.getFullYear() - experienceStart;
-    document.getElementById('experience').innerHTML = experience;
   </script>
 
 </body>
