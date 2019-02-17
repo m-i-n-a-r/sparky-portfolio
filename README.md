@@ -24,6 +24,12 @@ So i built a **small site**, starting from some libraries and templates, trying 
 - Animated logo, [Fontawesome 5](https://fontawesome.com/) icons.
 - More to come...
 
+## Screenshots!
+![First look](https://i.imgur.com/oaSfF57.png)
+![Skills section](https://i.imgur.com/OLlb6ON.png)
+![Projects section](https://i.imgur.com/O1kERnR.png)
+![Statistics section](https://i.imgur.com/yRPcl86.png)
+
 ## Contents
 The project contains everything is needed and probably more. 
 - The single page layout with **4 sections** (introduction, skills, projects, additional informations). Rearranging the content should be easy enough.
