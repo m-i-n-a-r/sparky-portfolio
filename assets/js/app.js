@@ -2,6 +2,25 @@
 // Refer to https://github.com/VincentGarreau/particles.js/ to customize this file
 // Background color and other properties are in main.css
 
+// This little piece of script changes the colors depending on the current month
+// The first color of each array is the most used in the respective month
+date = new Date();
+janColors = ["#0099ff","#ffffff"]
+febColors = ["#ffffff","#9900ff"]
+marColors = ["#99ffcc","#737373"]
+aprColors = ["#ff99cc","#ffffff"]
+mayColors = ["#e0e0e0","#99cc00"]
+junColors = ["#cccc00","#f0f0f0"]
+julColors = ["#cc9900","#ffffff"]
+augColors = ["#cc3300","#cc9900"]
+sepColors = ["#ff0066","#ffffff"]
+octColors = ["#0066cc","#ffffff"]
+novColors = ["#00cc99","#ccff66"]
+decColors = ["#ffffff","#ff0000"]
+colors = [janColors, febColors, marColors, aprColors, mayColors, junColors, julColors, augColors, sepColors, octColors, novColors, decColors];
+
+selColors = colors[date.getMonth()];
+
 particlesJS('particles-js',
   
 {
@@ -15,7 +34,8 @@ particlesJS('particles-js',
       }
     },
     "color": {
-      "value": ["#00D491", "#FFFFFF"]
+      // The color changes depending on month
+      "value": selColors
     },
     "shape": {
       "type": ["polygon"],
@@ -56,7 +76,8 @@ particlesJS('particles-js',
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#00D491",
+      // The color changes depending on month
+      "color": selColors[0],
       "opacity": 0.5,
       "width": 1.5
     },

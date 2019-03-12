@@ -2825,7 +2825,7 @@ input, select, textarea {
 			margin-top: 0.5em;
 			background-color: #e0e0e0; /* Background color of each skill */
 			color: #636363; /* Text color */
-			border: 3px solid rgba(36, 143, 120, 0.644); /* Border color of each skill */
+			border: 3px solid rgba(105, 105, 105, 0.644); /* Border color of each skill */
 			border-radius: 20px;
 			text-align: center;
 		}
