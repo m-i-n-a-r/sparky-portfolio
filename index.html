@@ -330,7 +330,8 @@
     // Assign the current year to the copyright line
     document.getElementById('year').innerHTML = year;
 
-    if (date.getMonth() <= birthMonth && date.getDate() <= birthDay) year = year - 1;
+    if ((date.getMonth() + 1 < birthMonth && date.getDate() <= birthDay) || date.getMonth() < birthMonth)
+      year--;
     age = year - birthYear;
     // The initial description. It is meant to be modified freely
     me = "I'm a " + age + " years old guy, i have many interests and hobbies and a great " +
