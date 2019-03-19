@@ -2,8 +2,9 @@
 [![License: MIT](https://img.shields.io/cocoapods/l/AFNetworking.svg)](https://github.com/m-i-n-a-r/sparky-portfolio/blob/master/LICENSE.md)\
 Sparky Portfolio is an open source **responsive website** project of a simple yet beautiful portfolio/personal site. It's under the **MIT License**. Build your personal site in **half a day**!
 
-### Status: V 1.0. Ready to be used!
+### Status: V 1.1. Ready to be used!
 - [ ] New sections (i accept suggestions!)
+- [x] Monthly colors
 - [x] Optimizations
 - [x] Cleanup
 - [x] Code comments
@@ -42,7 +43,7 @@ Since this is my [personal site](https://minar.ml), you have to replace some ass
 1. **Clone** the repository to your machine, or simply **download** as a zip and unzip it.
 2. The "core" of the site is the `index.html` file: here you will find the page layout.
 3. Replace the images in the `/images` folder with your profile pic, your projects and your site icon. I used an **svg** for my logo, but you can replace it with a png.
-4. Open `app.js` to customize particles.js. You can easily **remove** them, if you want. 
+4. Open `app.js` to customize particles.js. You can easily **remove** them, if you want. A little function changes the color scheme depending on the month. Removing or modifying it should be easy.
 5. To change the **font** and customize buttons, dimensions and so on, just open `main.css` and read the comments inside. If something is not commented and you don't know what you're doing, don't modify it!
 6. To **test** the site, just open the `index.html` in Chrome or in your favorite browser. Use the dev tools to show the **mobile version**, if you need it.
 
