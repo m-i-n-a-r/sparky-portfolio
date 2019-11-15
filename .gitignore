@@ -1,2 +1,6 @@
-# Firebase Log Files
+# Firebase Stuff
 *.log
+firebase.json
+public/
+.firebaserc
+
