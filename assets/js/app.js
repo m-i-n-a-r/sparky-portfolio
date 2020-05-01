@@ -75,7 +75,7 @@ particlesJS('particles-js',
     },
     "line_linked": {
       "enable": true,
-      "distance": 150,
+      "distance": 120,
       // The color changes depending on month
       "color": selColors[0],
       "opacity": 0.5,
@@ -111,15 +111,15 @@ particlesJS('particles-js',
     },
     "modes": {
       "grab": {
-        "distance": 250,
+        "distance": 150,
         "line_linked": {
-          "opacity": 1
+          "opacity": 0.8
         }
       },
       "bubble": {
         "distance": 300,
         "size": 8,
-        "duration": 0.5,
+        "duration": 1,
         "opacity": 6,
         "speed": 6
       },
